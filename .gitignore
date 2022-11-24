@@ -1,18 +1,44 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Generic ignores
+*.log
+*.log.*
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+._*
+__pycache__
 
-# Other files and folders
-.settings/
+# Directory (contents) ignores
+.cloud
+.storage
+deps
+@eaDir
+custom_components
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Specific file ignores
+core
+image
+ip_bans.yaml
+secrets.yaml
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Build-in blueprints ignores
+blueprints/*/homeassistant
+
+# ESPHome ignores
+esphome/.*/
+
+# Ignore add-on files
+aircast.xml
+airsonos.xml
+notebooks
+
+# Ignore files created by IDE's
+.vscode
+.theia
+.Trash*
+
+# Specific keeps
+!.gitkeep
+
+# Temporary ignores
+.old_config
